@@ -1,0 +1,103 @@
+.styling-text {
+  /* to change the color of the text */
+  color: #000000;
+
+  /* to change the size of the text */
+  font-size: 28px;
+
+  /* to add different font sytle to the text */
+  font-family: sans-serif;
+
+  /* if you want to change the case of the text */
+  text-transform: capitalize;
+
+  /* if you want to change the style of the text */
+  font-style: normal;
+
+  /* if we want to change the hight of every word in the text
+  we should use line-height */
+  line-height: 1.5;
+
+  /* If you want to align your text in center */
+  text-align: center;
+}
+
+/*
+LIST SELECTORS:
+Combining selectors because we want to apply same font family to all the selected elements. We need to put "," between the elements.  This is the most important thing to understand.
+*/
+h1,
+h2,
+p,
+a {
+  font-family: sans-serif;
+}
+
+h2,
+footer {
+  text-align: center;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/*
+CHILD SELECTOR:
+We need to have the paragraph elements inside the footer to be 12px. So writing "p" after "footer" withou comma, the most important thing in child selector.
+*/
+footer p {
+  font-size: 14px;
+}
+
+/*
+ID SELECTOR
+*/
+#page-summary {
+  font-size: 18px;
+}
+
+#tryeasy-nav-items a {
+  margin-right: 1rem;
+}
+
+article article {
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #f3f3f3;
+}
+
+li {
+  list-style: none;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:nth-child(even) {
+  font-weight: 200;
+}
+
+/* Styling Links */
+a:link {
+  color: #380fc0d5;
+  /* Rmove Underline*/
+  text-decoration: none;
+}
+
+a:visited {
+  /* color: #ca76d6; */
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  color: #ca76d6;
+}
